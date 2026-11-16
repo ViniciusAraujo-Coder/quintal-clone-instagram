@@ -1,0 +1,82 @@
+[
+  {
+    "user": "rafa.lima",
+    "nome": "Rafa Lima",
+    "cor": "#1e4d3a",
+    "bairro": "Pinheiros",
+    "bio": "Tutor do Biscoito, um caramelo que acha que todo mundo veio visitar ele.",
+    "seguidores": 214,
+    "seguindo": 180,
+    "pets": ["Biscoito"]
+  },
+  {
+    "user": "marinaecafe",
+    "nome": "Marina Costa",
+    "cor": "#c4673f",
+    "bairro": "Pinheiros",
+    "bio": "Designer, viciada em café e mãe do Paçoca. Sempre no Largo da Batata às 7h.",
+    "seguidores": 1832,
+    "seguindo": 402,
+    "pets": ["Paçoca"]
+  },
+  {
+    "user": "patasdavila",
+    "nome": "Patas da Vila",
+    "cor": "#7a3fc4",
+    "bairro": "Vila Madalena",
+    "bio": "ONG de resgate e adoção responsável. Feira de adoção todo sábado.",
+    "seguidores": 12800,
+    "seguindo": 96,
+    "pets": []
+  },
+  {
+    "user": "teo.nk",
+    "nome": "Téo Nakamura",
+    "cor": "#3f5fc4",
+    "bairro": "Vila Madalena",
+    "bio": "Dois gatos, zero autoridade dentro de casa.",
+    "seguidores": 5240,
+    "seguindo": 311,
+    "pets": ["Miso", "Shoyu"]
+  },
+  {
+    "user": "bru.alves",
+    "nome": "Bruna Alves",
+    "cor": "#b8913a",
+    "bairro": "Pinheiros",
+    "bio": "Professora e assessora pessoal do Tainha, um salsicha com ego de dogue alemão.",
+    "seguidores": 623,
+    "seguindo": 540,
+    "pets": ["Tainha"]
+  },
+  {
+    "user": "lartemp.butanta",
+    "nome": "Lar Temporário Butantã",
+    "cor": "#2f7d8a",
+    "bairro": "Butantã",
+    "bio": "Rede de lares temporários. Cuidamos até encontrar a família certa.",
+    "seguidores": 4310,
+    "seguindo": 120,
+    "pets": []
+  },
+  {
+    "user": "gabsrocha",
+    "nome": "Gabriel Rocha",
+    "cor": "#c43f5f",
+    "bairro": "Butantã",
+    "bio": "Adotei a Nina e minha vida virou ela.",
+    "seguidores": 288,
+    "seguindo": 350,
+    "pets": ["Nina"]
+  },
+  {
+    "user": "celia.e.os.gatos",
+    "nome": "Célia Barros",
+    "cor": "#5f8a3f",
+    "bairro": "Perdizes",
+    "bio": "Aposentada. Quatro gatos, um sofá destruído e nenhum arrependimento.",
+    "seguidores": 9120,
+    "seguindo": 64,
+    "pets": ["Frida", "Bartô", "Lua", "Pipoca"]
+  }
+]

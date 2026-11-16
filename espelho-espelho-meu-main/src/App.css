@@ -1,0 +1,409 @@
+.app {
+    min-height: 100vh;
+    padding-bottom: 32px;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: minmax(0, 470px) 300px;
+    justify-content: center;
+    gap: 64px;
+    margin: 32px auto;
+    padding: 0 16px;
+}
+
+.feed {
+    display: grid;
+    gap: 24px;
+    align-content: start;
+}
+
+.post {
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.post__header {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.post__avatar {
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+    border-radius: 50%;
+    background: #efefef;
+}
+
+.post__user {
+    display: grid;
+    gap: 2px;
+}
+
+.post__user strong {
+    font-size: 14px;
+}
+
+.post__user span {
+    color: #737373;
+    font-size: 12px;
+}
+
+.post__more {
+    margin-left: auto;
+}
+
+.icon-button {
+    border: 0;
+    background: transparent;
+    padding: 4px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #262626;
+    display: grid;
+    place-items: center;
+}
+
+.icon-button:hover {
+    opacity: .55;
+}
+
+.post__image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    background: #efefef;
+}
+
+.post__content {
+    padding: 10px 12px 14px;
+}
+
+.post__actions {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.post__actions .icon-button {
+    padding: 0;
+}
+
+.post__actions .icon-button:last-child {
+    margin-left: auto;
+}
+
+.post__likes {
+    margin: 0 0 8px;
+    font-size: 14px;
+}
+
+.post__caption {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.45;
+}
+
+.post__caption strong {
+    margin-right: 5px;
+}
+
+.header {
+    height: 60px;
+    border-bottom: 1px solid #dbdbdb;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 max(20px, calc((100vw - 935px) / 2));
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.header__logo {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 29px;
+    font-weight: 700;
+}
+
+.header__actions {
+    display: flex;
+    gap: 14px;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+/* ===== Aula 1: curtir e salvar ===== */
+.icon-button.curtido {
+  color: #ed4956;
+}
+
+.icon-button.curtido svg,
+.icon-button.salvo svg {
+  fill: currentColor;
+}
+
+/* ===== Aula 2: comentários ===== */
+.comentarios {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: grid;
+  gap: 4px;
+  font-size: 14px;
+}
+
+.comentar {
+  display: flex;
+  border-top: 1px solid #dbdbdb;
+}
+
+.comentar input {
+  flex: 1;
+  border: 0;
+  background: transparent;
+  padding: 14px 12px;
+  outline: none;
+  font-size: 14px;
+}
+
+.comentar button {
+  border: 0;
+  background: none;
+  color: #0095f6;
+  font-weight: 700;
+  padding: 0 14px;
+  cursor: pointer;
+}
+
+.comentar button:disabled {
+  opacity: .35;
+  cursor: default;
+}
+
+
+@media (max-width: 600px) {
+    .app {
+        padding-bottom: 58px;
+    }
+
+    .layout {
+        margin: 0;
+        padding: 0;
+    }
+
+    .feed {
+        gap: 10px;
+    }
+
+    .post {
+        border-inline: 0;
+        border-radius: 0;
+    }
+
+    .header__actions .icon-button:nth-child(-n + 2) {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 56px;
+        background: #fff;
+        border-top: 1px solid #dbdbdb;
+        z-index: 1;
+    }
+}
+
+/* ===== Aula 3: avatar e stories ===== */
+.avatar {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: white;
+  font-weight: 700;
+}
+
+.stories {
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  padding: 14px;
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  scrollbar-width: none;
+}
+
+.story {
+  border: 0;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  display: grid;
+  justify-items: center;
+  gap: 6px;
+  width: 68px;
+  flex-shrink: 0;
+}
+
+.story__anel {
+  padding: 3px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
+}
+
+.story__anel .avatar {
+  border: 3px solid #fff;
+}
+
+.story__nome {
+  font-size: 12px;
+  max-width: 68px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.modal-fundo {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  background: rgb(0 0 0 / .8);
+}
+
+.story-aberto {
+  width: min(100%, 360px);
+  aspect-ratio: 9 / 16;
+  max-height: 90vh;
+  border-radius: 16px;
+  padding: 16px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.story-aberto header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.story-aberto header .icon-button {
+  margin-left: auto;
+  color: white;
+}
+
+.story-aberto p {
+  margin: auto 0;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+@media (max-width: 600px) {
+  .stories {
+    border-radius: 0;
+    border-inline: 0;
+  }
+}
+
+/* ===== Aula 4: aside (coluna da direita) ===== */
+.aside {
+  position: sticky;
+  top: 92px;
+  align-self: start;
+  display: grid;
+  gap: 16px;
+}
+
+.aside__pessoa {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 0;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
+  min-width: 0;
+}
+
+.aside__pessoa span {
+  display: grid;
+  font-size: 14px;
+}
+
+.aside__pessoa small {
+  color: #737373;
+  font-size: 13px;
+}
+
+.aside__titulo {
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: #737373;
+}
+
+.aside__lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 14px;
+}
+
+.aside__lista li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.aside__seguir {
+  border: 0;
+  background: none;
+  padding: 0;
+  color: #0095f6;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.aside__seguir.seguindo {
+  color: #737373;
+}
+
+.aside__rodape {
+  margin: 8px 0 0;
+  font-size: 12px;
+  color: #737373;
+}
+
+@media (max-width: 1000px) {
+  .layout {
+    grid-template-columns: minmax(0, 470px);
+  }
+
+  .aside {
+    display: none;
+  }
+}
