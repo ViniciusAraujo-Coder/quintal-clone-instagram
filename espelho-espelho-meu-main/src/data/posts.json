@@ -1,53 +1,215 @@
-
 [
   {
     "id": 1,
-    "user": "ana.dev",
-    "location": "São Paulo, Brasil",
-    "avatar": "/images/avatars/ana.jpg",
-    "image": "/images/posts/post-1.jpg",
-    "alt": "Mesa de trabalho com notebook e café",
-    "likes": 128,
-    "caption": "Construindo uma interface por vez. ✨",
+    "user": "bru.alves",
+    "cor": "#b8913a",
+    "foto": "/images/bichos/tainha-pidao.jpg",
+    "bairro": "Pinheiros",
+    "especie": "cachorro",
+    "image": "/images/bichos/tainha-pidao.jpg",
+    "tom": "areia",
+    "alt": "Salsicha de pelo longo caramelo sentado no tapete olhando para cima com olhos pidões",
+    "likes": 1248,
+    "caption": "Esse é o olhar que o Tainha faz quando eu abro o pacote de pão de queijo. Ele já comeu. Duas vezes. Não caiam nessa.",
+    "adocao": null,
     "comentarios": [
-      {
-        "id": 1,
-        "user": "viajante",
-        "texto": "Que setup bonito!"
-      },
-      {
-        "id": 2,
-        "user": "cafecomcodigo",
-        "texto": "Esse café tá com cara de bom ☕"
-      }
+      { "id": 1, "user": "marinaecafe", "texto": "O Paçoca usa exatamente a mesma técnica na padaria." },
+      { "id": 2, "user": "teo.nk", "texto": "o olhar de \"ninguém me ama\" 🥺" }
     ]
   },
   {
     "id": 2,
-    "user": "viajante",
-    "location": "Rio de Janeiro, Brasil",
-    "avatar": "/images/avatars/viajante.jpg",
-    "image": "/images/posts/post-2.jpg",
-    "alt": "Paisagem de uma praia ao entardecer",
-    "likes": 342,
-    "caption": "Fim de tarde com vista para o mar.",
+    "user": "patasdavila",
+    "cor": "#7a3fc4",
+    "foto": "/images/bichos/onix-e-neve.jpg",
+    "bairro": "Vila Madalena",
+    "especie": "gato",
+    "image": "/images/bichos/onix-e-neve.jpg",
+    "tom": "lavanda",
+    "alt": "Gato preto abraçando um gato branco deitado, os dois olhando para a câmera",
+    "likes": 2412,
+    "caption": "Ônix e Neve foram resgatados juntos e não se largam por nada. Procuramos um lar que adote os dois, porque separar esse abraço não dá. Convivem bem com outros gatos.",
+    "adocao": { "nome": "Ônix e Neve", "info": "Machos · 1 ano · Adoção em dupla" },
     "comentarios": [
-      {
-        "id": 1,
-        "user": "ana.dev",
-        "texto": "Que vista!"
-      }
+      { "id": 1, "user": "celia.e.os.gatos", "texto": "Que coisa mais linda. Se eu não tivesse quatro..." },
+      { "id": 2, "user": "gabsrocha", "texto": "a cara da Neve de \"me salva\" kkkkk" }
     ]
   },
   {
     "id": 3,
-    "user": "cafecomcodigo",
-    "location": "Curitiba, Brasil",
-    "avatar": "/images/avatars/cafe.jpg",
-    "image": "/images/posts/post-3.jpg",
-    "alt": "Xícara de café ao lado de um teclado",
-    "likes": 87,
-    "caption": "Qual é a sua trilha sonora para programar?",
-    "comentarios": []
+    "user": "teo.nk",
+    "cor": "#3f5fc4",
+    "foto": "/images/bichos/miso-e-shoyu.jpg",
+    "bairro": "Vila Madalena",
+    "especie": "gato",
+    "image": "/images/bichos/miso-e-shoyu.jpg",
+    "tom": "ceu",
+    "alt": "Gato rajado e gato preto lado a lado no sofá, os dois com a língua para fora",
+    "likes": 3204,
+    "caption": "Pedi uma foto séria do Miso e do Shoyu pra carteirinha da vacina. Essa foi a melhor de 47 tentativas.",
+    "adocao": null,
+    "comentarios": [
+      { "id": 1, "user": "marinaecafe", "texto": "a sincronia da língua 😂" },
+      { "id": 2, "user": "celia.e.os.gatos", "texto": "Foto oficial aprovada. Lição de 30 anos de gatos: não tem foto séria." }
+    ]
+  },
+  {
+    "id": 4,
+    "user": "lartemp.butanta",
+    "cor": "#2f7d8a",
+    "foto": "/images/bichos/mel-filhote.jpg",
+    "bairro": "Butantã",
+    "especie": "cachorro",
+    "image": "/images/bichos/mel-filhote.jpg",
+    "tom": "salvia",
+    "alt": "Filhote de golden retriever sorrindo sentado na grama",
+    "likes": 4689,
+    "caption": "A Mel tem 3 meses, é vacinada e sorri desse jeito pra qualquer pessoa que passa no portão. Vai ficar grande e precisa de quintal (de verdade!).",
+    "adocao": { "nome": "Mel", "info": "Fêmea · 3 meses · Porte grande" },
+    "comentarios": [
+      { "id": 1, "user": "rafa.lima", "texto": "Esse sorriso devia ser proibido." },
+      { "id": 2, "user": "bru.alves", "texto": "Compartilhei com todo mundo da escola!" }
+    ]
+  },
+  {
+    "id": 5,
+    "user": "lu.calopsitas",
+    "cor": "#d98b2b",
+    "foto": "/images/bichos/gema-bom-dia.jpg",
+    "bairro": "Perdizes",
+    "especie": "ave",
+    "image": "/images/bichos/gema-galinha.png",
+    "tom": "areia",
+    "alt": "Calopsita amarela vestida com fantasia azul de galinha com crista vermelha",
+    "likes": 1876,
+    "caption": "Fantasia de galinha pra festa junina do prédio. A Gema não entendeu a ironia, mas aceitou o figurino em troca de painço.",
+    "adocao": null,
+    "comentarios": [
+      { "id": 1, "user": "gabsrocha", "texto": "a crista KKKKKK" },
+      { "id": 2, "user": "teo.nk", "texto": "Gema de galinha. Entendi o que você fez." }
+    ]
+  },
+  {
+    "id": 6,
+    "user": "marinaecafe",
+    "cor": "#c4673f",
+    "foto": "/images/bichos/pacoca-e-mexerica.jpg",
+    "bairro": "Pinheiros",
+    "especie": "cachorro",
+    "image": "/images/bichos/pacoca-e-mexerica.jpg",
+    "tom": "areia",
+    "alt": "Cachorro preto e branco e gato preto e branco lado a lado, cada um com uma mexerica equilibrada na cabeça",
+    "likes": 5310,
+    "caption": "Paçoca e Mexerica testando a teoria de que fruta na cabeça deixa qualquer foto melhor. Teoria confirmada.",
+    "adocao": null,
+    "comentarios": [
+      { "id": 1, "user": "rafa.lima", "texto": "o nome Mexerica fez sentido agora" },
+      { "id": 2, "user": "lu.calopsitas", "texto": "a cara do gato de quem tá sendo obrigado 😂" }
+    ]
+  },
+  {
+    "id": 7,
+    "user": "gabsrocha",
+    "cor": "#c43f5f",
+    "foto": "/images/bichos/nina-camera.jpg",
+    "bairro": "Butantã",
+    "especie": "gato",
+    "image": "/images/bichos/nina-camera.jpg",
+    "tom": "argila",
+    "alt": "Imagem verde de visão noturna de câmera de porta mostrando uma gata branca olhando para a lente",
+    "likes": 2932,
+    "caption": "Instalei câmera na porta. Primeira gravação, 3h da manhã: a Nina me encarando do lado de FORA. Até hoje ninguém sabe como ela saiu.",
+    "adocao": null,
+    "comentarios": [
+      { "id": 1, "user": "lartemp.butanta", "texto": "Ela sempre foi aventureira! 💚" },
+      { "id": 2, "user": "teo.nk", "texto": "isso é filme de terror com final feliz" }
+    ]
+  },
+  {
+    "id": 8,
+    "user": "celia.e.os.gatos",
+    "cor": "#5f8a3f",
+    "foto": "/images/bichos/barto-telefone.jpg",
+    "bairro": "Perdizes",
+    "especie": "gato",
+    "image": "/images/bichos/barto-telefone.jpg",
+    "tom": "areia",
+    "alt": "Gato laranja e branco segurando um telefone preto no ouvido",
+    "likes": 6310,
+    "caption": "O Bartô atendeu o telefone fixo e ficou dez minutos ouvindo a minha irmã. Foi a conversa mais educada que ela já teve com alguém da família.",
+    "adocao": null,
+    "comentarios": [
+      { "id": 1, "user": "marinaecafe", "texto": "\"alô, é da casa da Célia? ela não pode atender\"" }
+    ]
+  },
+  {
+    "id": 9,
+    "user": "rafa.lima",
+    "cor": "#1e4d3a",
+    "foto": "/images/bichos/biscoito-equilibrista.jpg",
+    "bairro": "Pinheiros",
+    "especie": "cachorro",
+    "image": "/images/bichos/biscoito-equilibrista.jpg",
+    "tom": "salvia",
+    "alt": "Filhote caramelo em pé numa garrafa equilibrando uma mexerica na cabeça e pedrinhas nas patas",
+    "likes": 8740,
+    "caption": "Foto antiga do Biscoito filhote, na época em que ele achava que ia ser artista de circo. Hoje ele não equilibra nem a própria vontade de deitar no sofá.",
+    "adocao": null,
+    "comentarios": [
+      { "id": 1, "user": "marinaecafe", "texto": "inspirou o Paçoca e a Mexerica claramente" },
+      { "id": 2, "user": "bru.alves", "texto": "o talento!!" }
+    ]
+  },
+  {
+    "id": 10,
+    "user": "lu.calopsitas",
+    "cor": "#d98b2b",
+    "foto": "/images/bichos/gema-bom-dia.jpg",
+    "bairro": "Perdizes",
+    "especie": "ave",
+    "image": "/images/bichos/kiwi-peruca.jpg",
+    "tom": "salvia",
+    "alt": "Agapornis verde com rosto laranja usando uma peruca castanha de franjinha",
+    "likes": 4120,
+    "caption": "O Kiwi foi no salão e pediu \"o corte do momento\". Não reclamem com ele, reclamem com o cabeleireiro.",
+    "adocao": null,
+    "comentarios": [
+      { "id": 1, "user": "teo.nk", "texto": "visual de vocalista de banda de 2007" },
+      { "id": 2, "user": "celia.e.os.gatos", "texto": "Elegantíssimo." }
+    ]
+  },
+  {
+    "id": 11,
+    "user": "celia.e.os.gatos",
+    "cor": "#5f8a3f",
+    "foto": "/images/bichos/barto-telefone.jpg",
+    "bairro": "Perdizes",
+    "especie": "gato",
+    "image": "/images/bichos/pipoca-morango.jpg",
+    "tom": "argila",
+    "alt": "Gato creme com olhos grandes olhando para a câmera com um morango na cabeça",
+    "likes": 3980,
+    "caption": "A Pipoca aceitou o morango na cabeça por exatos 3 segundos. Tempo suficiente.",
+    "adocao": null,
+    "comentarios": [
+      { "id": 1, "user": "gabsrocha", "texto": "esses olhos 😭" }
+    ]
+  },
+  {
+    "id": 12,
+    "user": "lu.calopsitas",
+    "cor": "#d98b2b",
+    "foto": "/images/bichos/gema-bom-dia.jpg",
+    "bairro": "Perdizes",
+    "especie": "ave",
+    "image": "/images/bichos/pequi-pirulito.jpg",
+    "tom": "ceu",
+    "alt": "Montagem de uma calopsita cinza de boné colorido segurando um pirulito, com campo verde e arco-íris ao fundo",
+    "likes": 2560,
+    "caption": "Fiz uma montagem do Pequi no papel de parede do computador antigo. Ele aprovou e assobiou a música de entrada do Windows.",
+    "adocao": null,
+    "comentarios": [
+      { "id": 1, "user": "rafa.lima", "texto": "nostalgia com penas" }
+    ]
   }
 ]

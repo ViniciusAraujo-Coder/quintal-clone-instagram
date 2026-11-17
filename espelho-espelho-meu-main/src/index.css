@@ -1,16 +1,60 @@
+/* ===== Cores do quintal =====
+   Cada cor é definida UMA vez e usada com var(--nome) */
+:root {
+  --fundo: #f6f4ef;
+  --cartao: #ffffff;
+  --cinza: #efece5;
+  --borda: #e5e0d6;
+  --texto: #191a17;
+  --suave: #6b6960;
+  --marca: #1e4d3a;
+  --marca-texto: #ffffff;
+  --destaque: #d9f26b;
+  --destaque-texto: #1f2a0a;
+  --curtir: #e5484d;
+  --icone-foto: rgb(25 26 23 / .22);
+
+  --tom-areia: #eadfcb;
+  --tom-lavanda: #ddd7ea;
+  --tom-ceu: #d3dfe3;
+  --tom-salvia: #d5e0cc;
+  --tom-argila: #e6d2c6;
+}
+
+/* Modo escuro: só trocamos o valor das mesmas variáveis */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fundo: #111311;
+    --cartao: #171a17;
+    --cinza: #20241f;
+    --borda: #2a2f29;
+    --texto: #ecede8;
+    --suave: #979b92;
+    --marca: #d9f26b;
+    --marca-texto: #1a2208;
+    --icone-foto: rgb(255 255 255 / .2);
+
+    --tom-areia: #3a342a;
+    --tom-lavanda: #322f3d;
+    --tom-ceu: #29343a;
+    --tom-salvia: #2c3528;
+    --tom-argila: #3b2f29;
+  }
+}
+
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    background: #fafafa;
-    color: #262626;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: var(--fundo);
+  color: var(--texto);
+  font-family: 'Figtree', Arial, sans-serif;
 }
 
 button,
 input {
-    font: inherit;
-    color: inherit;
+  font: inherit;
+  color: inherit;
 }

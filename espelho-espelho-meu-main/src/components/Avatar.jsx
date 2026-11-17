@@ -1,5 +1,16 @@
-// Círculo com a primeira letra do usuário (enquanto não temos fotos)
-function Avatar({ user, cor, tamanho = 36 }) {
+// Foto de perfil. Sem foto, mostra um círculo com a primeira letra do usuário
+function Avatar({ user, cor, foto, tamanho = 36 }) {
+  if (foto) {
+    return (
+      <img
+        className="avatar"
+        src={foto}
+        alt=""
+        style={{ width: tamanho, height: tamanho }}
+      />
+    )
+  }
+
   return (
     <span
       className="avatar"

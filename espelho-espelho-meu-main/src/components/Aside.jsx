@@ -1,16 +1,16 @@
 import Avatar from './Avatar'
 
 // Coluna da direita: sua conta e sugestões de quem seguir
-function Aside({ eu, sugestoes, seguindo, onSeguir }) {
+function Aside({ eu, sugestoes, seguindo, onSeguir, onAbrirPerfil }) {
   return (
     <aside className="aside">
-      <div className="aside__pessoa">
-        <Avatar user={eu.user} cor={eu.cor} tamanho={48} />
+      <button className="aside__pessoa" type="button" onClick={() => onAbrirPerfil(eu.user)}>
+        <Avatar user={eu.user} cor={eu.cor} foto={eu.foto} tamanho={48} />
         <span>
           <strong>{eu.user}</strong>
           <small>{eu.nome}</small>
         </span>
-      </div>
+      </button>
 
       <h2 className="aside__titulo">Sugestões para você</h2>
 
@@ -20,13 +20,13 @@ function Aside({ eu, sugestoes, seguindo, onSeguir }) {
 
           return (
             <li key={usuario.user}>
-              <div className="aside__pessoa">
-                <Avatar user={usuario.user} cor={usuario.cor} />
+              <button className="aside__pessoa" type="button" onClick={() => onAbrirPerfil(usuario.user)}>
+                <Avatar user={usuario.user} cor={usuario.cor} foto={usuario.foto} />
                 <span>
                   <strong>{usuario.user}</strong>
                   <small>{usuario.bairro}</small>
                 </span>
-              </div>
+              </button>
               <button
                 className={`aside__seguir ${jaSegue ? 'seguindo' : ''}`}
                 type="button"
@@ -39,7 +39,7 @@ function Aside({ eu, sugestoes, seguindo, onSeguir }) {
         })}
       </ul>
 
-      <p className="aside__rodape">Projeto de estudo em React</p>
+      <p className="aside__rodape">quintal · projeto de estudo em React</p>
     </aside>
   )
 }

@@ -19,9 +19,9 @@
 }
 
 .post {
-    background: #fff;
-    border: 1px solid #dbdbdb;
-    border-radius: 8px;
+    background: var(--cartao);
+    border: 1px solid var(--borda);
+    border-radius: 16px;
     overflow: hidden;
 }
 
@@ -30,14 +30,6 @@
     display: flex;
     align-items: center;
     gap: 10px;
-}
-
-.post__avatar {
-    width: 36px;
-    height: 36px;
-    object-fit: cover;
-    border-radius: 50%;
-    background: #efefef;
 }
 
 .post__user {
@@ -50,7 +42,7 @@
 }
 
 .post__user span {
-    color: #737373;
+    color: var(--suave);
     font-size: 12px;
 }
 
@@ -64,21 +56,13 @@
     padding: 4px;
     cursor: pointer;
     font-size: 24px;
-    color: #262626;
+    color: var(--texto);
     display: grid;
     place-items: center;
 }
 
 .icon-button:hover {
     opacity: .55;
-}
-
-.post__image {
-    display: block;
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    background: #efefef;
 }
 
 .post__content {
@@ -116,8 +100,8 @@
 
 .header {
     height: 60px;
-    border-bottom: 1px solid #dbdbdb;
-    background: #fff;
+    border-bottom: 1px solid var(--borda);
+    background: var(--cartao);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -127,10 +111,22 @@
     z-index: 1;
 }
 
-.header__logo {
-    font-family: 'Brush Script MT', cursive;
-    font-size: 29px;
-    font-weight: 700;
+.logo {
+  font-family: 'Bricolage Grotesque', Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: var(--marca);
+  border: 0;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* O pontinho vermelho depois do nome, feito só com CSS */
+.logo::after {
+  content: '.';
+  color: var(--curtir);
 }
 
 .header__actions {
@@ -144,12 +140,7 @@
 
 /* ===== Aula 1: curtir e salvar ===== */
 .icon-button.curtido {
-  color: #ed4956;
-}
-
-.icon-button.curtido svg,
-.icon-button.salvo svg {
-  fill: currentColor;
+  color: var(--curtir);
 }
 
 /* ===== Aula 2: comentários ===== */
@@ -164,7 +155,7 @@
 
 .comentar {
   display: flex;
-  border-top: 1px solid #dbdbdb;
+  border-top: 1px solid var(--borda);
 }
 
 .comentar input {
@@ -179,7 +170,7 @@
 .comentar button {
   border: 0;
   background: none;
-  color: #0095f6;
+  color: var(--marca);
   font-weight: 700;
   padding: 0 14px;
   cursor: pointer;
@@ -193,7 +184,12 @@
 
 @media (max-width: 600px) {
     .app {
-        padding-bottom: 58px;
+        /* espaço para a barra de baixo não cobrir o último post */
+        padding-bottom: calc(64px + env(safe-area-inset-bottom));
+    }
+
+    .header {
+        padding: 0 16px;
     }
 
     .layout {
@@ -210,22 +206,45 @@
         border-radius: 0;
     }
 
-    .header__actions .icon-button:nth-child(-n + 2) {
+    /* No celular, "criar" e "perfil" já estão na barra de baixo */
+    .header__actions .icon-button:first-child,
+    .header__actions .icon-button:last-child {
         display: none;
     }
 
     .mobile-nav {
         display: flex;
-        justify-content: space-around;
-        align-items: center;
+        align-items: stretch;
         position: fixed;
         bottom: 0;
         left: 0;
         right: 0;
-        height: 56px;
-        background: #fff;
-        border-top: 1px solid #dbdbdb;
-        z-index: 1;
+        height: calc(56px + env(safe-area-inset-bottom));
+        padding-bottom: env(safe-area-inset-bottom); /* barrinha do iPhone */
+        background: var(--cartao);
+        border-top: 1px solid var(--borda);
+        z-index: 10;
+    }
+
+    .mobile-nav__item {
+        flex: 1;
+        display: grid;
+        place-items: center;
+        border: 0;
+        background: none;
+        padding: 0;
+        font-size: 27px;
+        color: var(--texto);
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .mobile-nav__item:active {
+        transform: scale(.9);
+    }
+
+    .mobile-nav__item.ativo {
+        color: var(--marca);
     }
 }
 
@@ -244,9 +263,9 @@
   gap: 14px;
   overflow-x: auto;
   padding: 14px;
-  background: #fff;
-  border: 1px solid #dbdbdb;
-  border-radius: 8px;
+  background: var(--cartao);
+  border: 1px solid var(--borda);
+  border-radius: 16px;
   scrollbar-width: none;
 }
 
@@ -265,11 +284,11 @@
 .story__anel {
   padding: 3px;
   border-radius: 50%;
-  background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
+  background: linear-gradient(45deg, var(--destaque), var(--marca));
 }
 
 .story__anel .avatar {
-  border: 3px solid #fff;
+  border: 3px solid var(--cartao);
 }
 
 .story__nome {
@@ -314,6 +333,7 @@
 
 .story-aberto p {
   margin: auto 0;
+  font-family: 'Bricolage Grotesque', Arial, sans-serif;
   font-size: 26px;
   font-weight: 600;
   line-height: 1.3;
@@ -353,14 +373,14 @@
 }
 
 .aside__pessoa small {
-  color: #737373;
+  color: var(--suave);
   font-size: 13px;
 }
 
 .aside__titulo {
   margin: 8px 0 0;
   font-size: 14px;
-  color: #737373;
+  color: var(--suave);
 }
 
 .aside__lista {
@@ -382,20 +402,20 @@
   border: 0;
   background: none;
   padding: 0;
-  color: #0095f6;
+  color: var(--marca);
   font-weight: 700;
   font-size: 13px;
   cursor: pointer;
 }
 
 .aside__seguir.seguindo {
-  color: #737373;
+  color: var(--suave);
 }
 
 .aside__rodape {
   margin: 8px 0 0;
   font-size: 12px;
-  color: #737373;
+  color: var(--suave);
 }
 
 @media (max-width: 1000px) {
@@ -406,4 +426,365 @@
   .aside {
     display: none;
   }
+}
+
+/* ===== Aula 5: fotos, adoção e filtro ===== */
+.post__autor {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 0;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
+}
+
+.post__foto {
+  position: relative;
+  user-select: none;
+}
+
+.foto {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.foto--vazia {
+  display: grid;
+  place-items: center;
+  font-size: 96px;
+  color: var(--icone-foto);
+}
+
+.tom-areia { background: var(--tom-areia); }
+.tom-lavanda { background: var(--tom-lavanda); }
+.tom-ceu { background: var(--tom-ceu); }
+.tom-salvia { background: var(--tom-salvia); }
+.tom-argila { background: var(--tom-argila); }
+
+.selo {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: var(--destaque);
+  color: var(--destaque-texto);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.adocao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 12px;
+  padding: 12px;
+  background: var(--cinza);
+  border-radius: 12px;
+}
+
+.adocao div {
+  display: grid;
+}
+
+.adocao span {
+  font-size: 13px;
+  color: var(--suave);
+}
+
+.botao {
+  border: 0;
+  background: var(--marca);
+  color: var(--marca-texto);
+  font-weight: 700;
+  padding: 9px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.botao:disabled {
+  opacity: .6;
+  cursor: default;
+}
+
+.filtros {
+  display: flex;
+  gap: 8px;
+}
+
+.chip {
+  border: 1px solid var(--borda);
+  background: var(--cartao);
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.chip.ativo {
+  background: var(--texto);
+  border-color: var(--texto);
+  color: var(--fundo);
+}
+
+@media (max-width: 600px) {
+  .filtros {
+    padding: 0 12px;
+  }
+}
+
+/* ===== Aula 6: perfil ===== */
+.botao--claro {
+  background: var(--cinza);
+  color: var(--texto);
+}
+
+.botao--largo {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.perfil {
+  background: var(--cartao);
+  border: 1px solid var(--borda);
+  border-radius: 16px;
+  overflow: hidden;
+  padding: 16px;
+  display: grid;
+  gap: 16px;
+}
+
+.voltar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: fit-content;
+  border: 0;
+  background: none;
+  padding: 0;
+  color: var(--suave);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.perfil__topo {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.perfil__numeros {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 13px;
+  color: var(--suave);
+}
+
+.perfil__numeros span {
+  display: grid;
+}
+
+.perfil__numeros strong {
+  font-size: 17px;
+  color: var(--texto);
+}
+
+.perfil__bio {
+  display: grid;
+  gap: 2px;
+  font-size: 14px;
+}
+
+.perfil__bio p {
+  margin: 6px 0;
+  line-height: 1.5;
+}
+
+.perfil__user,
+.perfil__local {
+  color: var(--suave);
+}
+
+.perfil__local {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.perfil__pets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.pet {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--cinza);
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.perfil__vazio {
+  text-align: center;
+  color: var(--suave);
+}
+
+.grade {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+  margin: 0 -16px -16px;
+}
+
+.grade__item {
+  position: relative;
+}
+
+.grade .foto--vazia {
+  font-size: 40px;
+}
+
+.grade__curtidas {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  background: rgb(0 0 0 / .4);
+  color: white;
+  font-weight: 700;
+  opacity: 0;
+  transition: opacity .2s;
+}
+
+.grade__item:hover .grade__curtidas {
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .perfil {
+    border-radius: 0;
+    border-inline: 0;
+  }
+}
+
+/* ===== Extra: fotos de verdade ===== */
+/* O avatar com foto é uma <img>: recorta a imagem no círculo */
+img.avatar {
+  object-fit: cover;
+  background: var(--cinza);
+}
+
+/* Story com foto: a imagem cobre o cartão e o texto fica embaixo */
+.story-aberto--foto {
+  background-size: cover;
+  background-position: center;
+}
+
+.story-aberto--foto p {
+  margin: auto 0 8px;
+  font-size: 20px;
+  text-shadow: 0 1px 8px rgb(0 0 0 / .6);
+}
+
+/* Fotos verticais aparecem inteiras no story, sem cortar demais */
+.story-aberto--foto header {
+  text-shadow: 0 1px 6px rgb(0 0 0 / .6);
+}
+
+/* ===== Extra: navegação nos stories ===== */
+.story-aberto {
+  position: relative;
+}
+
+.story__barras {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 12px;
+  position: relative;
+  z-index: 2;
+}
+
+.story__barra {
+  flex: 1;
+  height: 3px;
+  border-radius: 2px;
+  background: rgb(255 255 255 / .35);
+  overflow: hidden;
+}
+
+.story__progresso {
+  display: block;
+  width: 0;
+  height: 100%;
+  background: white;
+}
+
+/* Stories que já passaram ficam com a barra cheia */
+.story__progresso.cheio {
+  width: 100%;
+}
+
+/* O story atual enche a barra em 5 segundos */
+.story__progresso.rodando {
+  animation: progresso-story 5s linear forwards;
+}
+
+@keyframes progresso-story {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* O cabeçalho fica por cima das áreas de toque, para o X funcionar */
+.story-aberto header {
+  position: relative;
+  z-index: 2;
+}
+
+.story__lado {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  border: 0;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.story__lado--voltar {
+  left: 0;
+  width: 30%;
+}
+
+.story__lado--avancar {
+  right: 0;
+  width: 70%;
+}
+
+/* ===== Extra: nomes clicáveis na legenda e nos comentários ===== */
+.nome-link {
+  border: 0;
+  background: none;
+  padding: 0;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.nome-link:hover {
+  text-decoration: underline;
 }

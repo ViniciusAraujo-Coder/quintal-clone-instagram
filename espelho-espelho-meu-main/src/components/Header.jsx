@@ -1,21 +1,21 @@
-import { FiHeart, FiHome, FiPlusSquare, FiSearch } from 'react-icons/fi'
+import { PiHeart, PiPaperPlaneTilt, PiPlusSquare, PiUser } from 'react-icons/pi'
 
-function Header() {
+function Header({ onInicio, onPerfil }) {
   return (
     <header className="header">
-      <span className="header__logo">Instagram</span>
+      <button className="logo" type="button" onClick={onInicio}>quintal</button>
       <nav className="header__actions" aria-label="Navegação principal">
-        <button className="icon-button" type="button" aria-label="Início">
-          <FiHome />
-        </button>
-        <button className="icon-button" type="button" aria-label="Pesquisar">
-          <FiSearch />
-        </button>
         <button className="icon-button" type="button" aria-label="Criar publicação">
-          <FiPlusSquare />
+          <PiPlusSquare />
         </button>
-        <button className="icon-button" type="button" aria-label="Atividades">
-          <FiHeart />
+        <button className="icon-button" type="button" aria-label="Notificações">
+          <PiHeart />
+        </button>
+        <button className="icon-button" type="button" aria-label="Mensagens">
+          <PiPaperPlaneTilt />
+        </button>
+        <button className="icon-button" type="button" aria-label="Meu perfil" onClick={onPerfil}>
+          <PiUser />
         </button>
       </nav>
     </header>
