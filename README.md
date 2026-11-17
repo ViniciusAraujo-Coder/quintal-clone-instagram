@@ -9,9 +9,9 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-f7df1e?style=flat-square&logo=javascript&logoColor=black)
 ![CSS](https://img.shields.io/badge/CSS-663399?style=flat-square&logo=css&logoColor=white)
 
-</div>
+<br>
 
-## ✨ O que dá pra fazer
+<h2>✨ O que dá pra fazer</h2>
 
 <table>
   <tr>
@@ -26,29 +26,28 @@
   </tr>
 </table>
 
-## 📸 Telas
+<br>
 
-<div align="center">
-  <img src="docs/print-desktop.png" alt="O quintal no computador" width="100%">
-  <br><br>
-  <img src="docs/print-celular.png" alt="No celular, modo claro" width="40%">
-  &nbsp;&nbsp;&nbsp;
-  <img src="docs/print-escuro.png" alt="No celular, modo escuro" width="40%">
-</div>
+<h2>📸 Telas</h2>
 
-## ▶️ Rodar no computador
+<img src="docs/print-desktop.png" alt="O quintal no computador" width="90%">
 
-<img src="docs/calopsita-no-notebook.gif" alt="Calopsita em pixel art sentada num notebook" width="150" align="right">
+<br><br>
 
-```bash
-npm install
-npm run dev
-```
+<img src="docs/print-celular.png" alt="No celular, modo claro" width="40%">
+&nbsp;&nbsp;&nbsp;
+<img src="docs/print-escuro.png" alt="No celular, modo escuro" width="40%">
 
-<br clear="right">
+<br><br>
 
----
+<h2>▶️ Rodar no computador</h2>
 
-<div align="center">
+<code>npm install</code> &nbsp;→&nbsp; <code>npm run dev</code>
+
+<br><br><br>
+
+<img src="docs/calopsita-no-notebook.gif" alt="Calopsita em pixel art sentada num notebook" width="160">
+
 <sub>Feito por <a href="https://github.com/ViniciusAraujo-Coder">Vinicius Araujo</a> · pessoas fictícias · fotos do Pinterest, só para estudo</sub>
+
 </div>
