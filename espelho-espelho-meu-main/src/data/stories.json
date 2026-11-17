@@ -1,10 +1,10 @@
 [
-  { "id": 1, "user": "lu.calopsitas", "cor": "#d98b2b", "foto": "/images/bichos/gema-bom-dia.jpg", "image": "/images/bichos/pequi-ombro.jpg", "texto": "O Pequi decidiu que meu ombro é o escritório dele." },
-  { "id": 2, "user": "marinaecafe", "cor": "#c4673f", "foto": "/images/bichos/pacoca-e-mexerica.jpg", "image": null, "texto": "Paçoca acordou às 5h pra latir pro caminhão do lixo. De novo." },
-  { "id": 3, "user": "patasdavila", "cor": "#7a3fc4", "foto": "/images/bichos/onix-e-neve.jpg", "image": null, "texto": "Feira de adoção neste sábado, das 10h às 16h, na Praça Benedito Calixto!" },
-  { "id": 4, "user": "teo.nk", "cor": "#3f5fc4", "foto": "/images/bichos/miso-e-shoyu.jpg", "image": null, "texto": "Shoyu derrubou meu café. Olhou pra mim. Derrubou o açúcar também." },
-  { "id": 5, "user": "lu.calopsitas", "cor": "#d98b2b", "foto": "/images/bichos/gema-bom-dia.jpg", "image": "/images/bichos/caiques-visita.jpg", "texto": "Os caiques da vizinha vieram visitar. Um deu um tapa no outro e eu tô do lado de quem apanhou." },
-  { "id": 6, "user": "bru.alves", "cor": "#b8913a", "foto": "/images/bichos/tainha-pidao.jpg", "image": null, "texto": "Tainha de capa de chuva nova. Ele odiou. Eu amei." },
-  { "id": 7, "user": "gabsrocha", "cor": "#c43f5f", "foto": "/images/bichos/nina-camera.jpg", "image": null, "texto": "Nina descobriu a janela. Agora é a fiscal oficial dos pombos." },
-  { "id": 8, "user": "celia.e.os.gatos", "cor": "#5f8a3f", "foto": "/images/bichos/barto-telefone.jpg", "image": "/images/bichos/pipoca-morango.jpg", "texto": "Bom dia de quem já tomou café com quatro gatos em cima da mesa." }
+  { "id": 1, "user": "lu.calopsitas", "cor": "#d98b2b", "foto": "images/bichos/gema-bom-dia.jpg", "image": "images/bichos/pequi-ombro.jpg", "texto": "O Pequi decidiu que meu ombro é o escritório dele." },
+  { "id": 2, "user": "marinaecafe", "cor": "#c4673f", "foto": "images/bichos/pacoca-e-mexerica.jpg", "image": null, "texto": "Paçoca acordou às 5h pra latir pro caminhão do lixo. De novo." },
+  { "id": 3, "user": "patasdavila", "cor": "#7a3fc4", "foto": "images/bichos/onix-e-neve.jpg", "image": null, "texto": "Feira de adoção neste sábado, das 10h às 16h, na Praça Benedito Calixto!" },
+  { "id": 4, "user": "teo.nk", "cor": "#3f5fc4", "foto": "images/bichos/miso-e-shoyu.jpg", "image": null, "texto": "Shoyu derrubou meu café. Olhou pra mim. Derrubou o açúcar também." },
+  { "id": 5, "user": "lu.calopsitas", "cor": "#d98b2b", "foto": "images/bichos/gema-bom-dia.jpg", "image": "images/bichos/caiques-visita.jpg", "texto": "Os caiques da vizinha vieram visitar. Um deu um tapa no outro e eu tô do lado de quem apanhou." },
+  { "id": 6, "user": "bru.alves", "cor": "#b8913a", "foto": "images/bichos/tainha-pidao.jpg", "image": null, "texto": "Tainha de capa de chuva nova. Ele odiou. Eu amei." },
+  { "id": 7, "user": "gabsrocha", "cor": "#c43f5f", "foto": "images/bichos/nina-camera.jpg", "image": null, "texto": "Nina descobriu a janela. Agora é a fiscal oficial dos pombos." },
+  { "id": 8, "user": "celia.e.os.gatos", "cor": "#5f8a3f", "foto": "images/bichos/barto-telefone.jpg", "image": "images/bichos/pipoca-morango.jpg", "texto": "Bom dia de quem já tomou café com quatro gatos em cima da mesa." }
 ]
