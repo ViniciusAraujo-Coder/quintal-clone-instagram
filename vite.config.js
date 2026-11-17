@@ -5,5 +5,5 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   plugins: [react()],
   // O GitHub Pages publica o site em /<nome-do-repositório>/, não na raiz
-  base: '/espelho-espelho-meu-main/',
+  base: '/quintal-clone-instagram/',
 })
