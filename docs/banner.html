@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<!-- Arte do banner do README. Para gerar o PNG de novo, tire um print desta página em 1280x440. -->
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=Figtree:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; }
+  html, body { width: 1280px; height: 440px; overflow: hidden; }
+  body {
+    background:
+      radial-gradient(circle at 85% 20%, rgb(217 242 107 / .18), transparent 40%),
+      radial-gradient(circle at 10% 90%, rgb(217 242 107 / .12), transparent 35%),
+      #1e4d3a;
+    font-family: 'Figtree', sans-serif;
+    color: #f6f4ef;
+    display: flex;
+    align-items: center;
+    padding: 0 90px;
+    gap: 40px;
+  }
+  .texto { flex: 1; }
+  .logo {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 800;
+    font-size: 150px;
+    letter-spacing: -0.05em;
+    line-height: .9;
+    color: #d9f26b;
+  }
+  .logo span { color: #e5484d; }
+  .frase {
+    margin-top: 22px;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  .selo {
+    display: inline-block;
+    margin-top: 22px;
+    padding: 8px 18px;
+    border-radius: 999px;
+    background: rgb(246 244 239 / .12);
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .bichos {
+    display: grid;
+    grid-template-columns: repeat(3, 118px);
+    column-gap: 18px;
+    row-gap: 46px;
+    transform: rotate(-4deg) translateY(-14px);
+  }
+  .bichos img {
+    width: 118px;
+    height: 118px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #d9f26b;
+    box-shadow: 0 10px 24px rgb(0 0 0 / .3);
+  }
+  .bichos img:nth-child(even) { transform: translateY(26px); }
+</style>
+</head>
+<body>
+  <div class="texto">
+    <div class="logo">quintal<span>.</span></div>
+    <p class="frase">A rede social de quem ama bicho 🐾</p>
+    <span class="selo">Atividade do Instituto PROA · feita em React</span>
+  </div>
+  <div class="bichos">
+    <img src="../public/images/bichos/tainha-pidao.jpg" alt="">
+    <img src="../public/images/bichos/miso-e-shoyu.jpg" alt="">
+    <img src="../public/images/bichos/mel-filhote.jpg" alt="">
+    <img src="../public/images/bichos/gema-bom-dia.jpg" alt="">
+    <img src="../public/images/bichos/pacoca-e-mexerica.jpg" alt="">
+    <img src="../public/images/bichos/pipoca-morango.jpg" alt="">
+  </div>
+</body>
+</html>
