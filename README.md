@@ -49,6 +49,6 @@
 <code>npm install</code> &nbsp;→&nbsp; <code>npm run dev</code>
 
 <img src="docs/calopsita-no-notebook.gif" alt="Calopsita em pixel art sentada num notebook" width="130"><br>
-<sub>Feito por <a href="https://github.com/ViniciusAraujo-Coder">Vinicius Araujo</a> · pessoas fictícias · fotos do Pinterest, só para estudo</sub>
+<sub>Feito por <a href="https://github.com/ViniciusAraujo-Coder">Vinicius Araujo</a> · pessoas fictícias · fotos do Pinterest, só para estudo.</sub>
 
 </div>
