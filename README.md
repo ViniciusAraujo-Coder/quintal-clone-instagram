@@ -34,17 +34,21 @@
 
 <br><br>
 
-<img src="docs/print-celular.png" alt="No celular, modo claro" width="40%">
-&nbsp;&nbsp;&nbsp;
-<img src="docs/print-escuro.png" alt="No celular, modo escuro" width="40%">
+<table>
+  <tr>
+    <td align="center" width="33%"><img src="docs/print-story.png" alt="Story aberto no celular"><br><sub>⭕ stories</sub></td>
+    <td align="center" width="33%"><img src="docs/print-perfil.png" alt="Perfil no modo escuro"><br><sub>👤 perfil, no modo escuro</sub></td>
+    <td align="center" width="33%"><img src="docs/print-adocao.png" alt="Post de adoção com pedido enviado"><br><sub>🏠 adoção</sub></td>
+  </tr>
+</table>
 
-<br><br>
+<br>
 
 <h2>▶️ Rodar no computador</h2>
 
 <code>npm install</code> &nbsp;→&nbsp; <code>npm run dev</code>
 
-<br><br><br>
+<br><br>
 
 <img src="docs/calopsita-no-notebook.gif" alt="Calopsita em pixel art sentada num notebook" width="160">
 
